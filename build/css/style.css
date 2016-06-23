@@ -1,0 +1,33 @@
+/* "rc-" is a prefix for any class associated with a custom react component */
+
+.rc-header{
+    /*background-color: blue;*/
+    /*position: fixed;
+    top: 0;
+    left: 0;*/
+    /*height: 150px;*/
+    outline: 1px solid lightgray;
+}
+
+.rc-header-content{
+    height: 150px !important;
+    /*width: 720px !important;*/
+    outline: 1px solid lightgray;
+}
+
+.rc-view{
+    width: 700px;
+    min-height: 500px;
+    /*margin: 150px auto;*/
+    margin: 0 auto;
+    padding: 10px;
+    outline: 1px solid lightgray;
+}
+.rc-view h1{
+    margin-left: 10px;
+    text-align: left;
+}
+.rc-view p{
+    margin-left: 50px;
+    text-align: left;
+}
