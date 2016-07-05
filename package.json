@@ -10,8 +10,10 @@
     "express": "^4.13.3",
     "gulp": "^3.8.11",
     "gulp-rename": "^1.2.2",
+    "history": "^1.17.0",
     "react": "^0.14",
-    "react-bootstrap": "^0.25.0",
+    "react-dom": "^0.14.0",
+    "react-bootstrap": "^0.29.0",
     "react-router": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }

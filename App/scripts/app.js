@@ -1,6 +1,6 @@
 import React from 'react';
-import Router from 'react-router';
-var {DefaultRoute, Route} = Router;
+import ReactDOM from 'react-dom';
+import { IndexRoute, Router, Route } from 'react-router'
 
 import AppHeader from './Components/Header';
 
@@ -10,11 +10,11 @@ import Dashboard from './Views/Dashboard';
 import PageTemplate from './Views/PageTemplate';
 
 var routes = (
-  <Route name="app" path="/" handler={AppHeader}>
-    <Route name="dashboard" handler={Dashboard}/>
-    <Route name="pagetemplate" handler={PageTemplate}/>
-    <DefaultRoute handler={Home}/>
+  <Route path="/" component={AppHeader}>
+    <IndexRoute component={Home} />
+    <Route path="dashboard" component={Dashboard}/>
+    <Route path="pagetemplate" component={PageTemplate}/>
   </Route>
 );
 
-Router.run(routes, (Handler) => React.render(<Handler /> , document.body));
+ReactDOM.render(<Router>{routes}</Router>, document.body);

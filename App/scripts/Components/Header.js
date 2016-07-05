@@ -1,6 +1,5 @@
 import React from 'react';
-import Router from 'react-router';
-var {RouteHandler} = Router;
+import { Router } from 'react-router';
 var {Nav} = require('react-bootstrap');
 
 import MenuItem from './MenuItem';
@@ -42,7 +41,7 @@ var Header = React.createClass({
                         </Nav>
                     </div>
                 </header>
-                <RouteHandler/>
+                {this.props.children}
             </div>
         );
     }

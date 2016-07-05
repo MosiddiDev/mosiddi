@@ -31,7 +31,7 @@ var Dashboard = React.createClass({
                 {
                     dashboard.map((function(dashboardItem, index){
                         return (
-                            <div onClick={this.openDetails.bind(this, dashboardItem)}>
+                            <div key={index} onClick={this.openDetails.bind(this, dashboardItem)}>
                                 <ListGroupItem header={dashboardItem.title}>{dashboardItem.preview || dashboardItem.content}</ListGroupItem>
                             </div>
                         )
